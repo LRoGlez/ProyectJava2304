@@ -22,6 +22,7 @@ public class Main {
 		m3.setCv(68);
 		m3.setColour("blue");
 		m3.setSpeed(130);
+		Helper.brake(m3);
 		
 		
 		Helper.acelerate(m1, 20);
