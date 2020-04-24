@@ -47,5 +47,12 @@ class HelperTest {
 		Helper.addCv(m2, 27);
 		assertEquals(127, m2.getCv());
 	}
-
+	 int sumSpeed() {
+		 Moto m2=new Moto("2577CHL", "Honda", "CBR", 1000, 100, 75, "red");
+		 Moto m1=new Moto("7854JKL", "Yamaha", "MT09", 896, 125, 50, "black");
+		 
+		 Helper.sumSpeed(m1, m2);
+		 assertEquals(125, m1.getSpeed()+m2.getSpeed());
+		 return m1.getSpeed()+m2.getSpeed();
+	 }
 }

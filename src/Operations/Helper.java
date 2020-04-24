@@ -18,4 +18,7 @@ public class Helper {
 	public static void addCv(Moto m, int c) {
 		m.setCv(m.getCv()+c);
 	}
+	public static int sumSpeed(Moto m, Moto t) {
+		return m.getSpeed()+t.getSpeed();
+	}
 }
