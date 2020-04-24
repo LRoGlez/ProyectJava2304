@@ -12,4 +12,10 @@ public class Helper {
 	public static void brake(Moto m) {
 		m.setSpeed(0);
 	}
+	public static void paint(Moto m, String c) {
+		m.setColour(c);
+	}
+	public static void addCv(Moto m, int c) {
+		m.setCv(m.getCv()+c);
+	}
 }

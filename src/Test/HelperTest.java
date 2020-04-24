@@ -31,5 +31,21 @@ class HelperTest {
 		Helper.brake(m2);
 		assertEquals(0, m2.getSpeed());
 	}
+	
+	@Test
+	void paint() {
+		Moto m2=new Moto("2577CHL", "Honda", "CBR", 1000, 190, 75, "red");
+		
+		Helper.paint(m2, "green");
+		assertEquals("green", m2.getColour());
+	}
+	
+	@Test
+	void addCv() {
+		Moto m2=new Moto("2577CHL", "Honda", "CBR", 1000, 100, 75, "red");
+		
+		Helper.addCv(m2, 27);
+		assertEquals(127, m2.getCv());
+	}
 
 }
